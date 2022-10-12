@@ -1,0 +1,638 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+
+/* 상단 네비 영역 */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background: #fff;
+}
+
+.headerwrap {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+}
+
+.menu {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.menu > li {
+    position: relative;
+    width: 100%;
+}
+
+.menu > li > a {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.menu > li > a:hover {
+    color: #00a6da;
+}
+
+.submenu {
+    width: 100%;
+    text-align: center;
+    background: #333;
+    position: absolute;
+    top: 93px;
+    display: none;
+    z-index: 999;
+}
+
+.submenu ul {
+    width: 25%;
+}
+
+.submenu li {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+.submenu a {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.submenu a:hover {
+    background: #00a6da;
+    color: #fff;
+}
+
+.toggleBtn {
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    top: 40px;
+    display: none;
+}
+
+.toggleBtn i {
+    color: #333;
+}
+
+
+
+
+
+/* 본문 내용 */
+
+
+
+main{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    color: #333;
+}
+.parallax01{
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/parallax01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax01 h1, .parallax02 h1, .parallax03 h1, .parallax04 h1{
+    position: absolute;
+    color: #fff;
+    top: 230px;
+    left: 100px;
+    font-size: 50px;
+    
+}
+
+.parallax02 {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/parallax02.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax03 {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/parallax03.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax04 {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/parallax04.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subtit_hr{
+    width: 25px;
+    text-align: center;
+    margin: 0 auto;
+    height: 5px;
+    background: #333;
+    border: none;
+}
+
+
+
+/* sub_brand */
+
+.one{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 0;
+    flex-wrap: wrap;
+}
+.one_txt{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+.one_txt h2{padding: 20px;}
+.spacer {
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+}
+
+.spacer hr{
+    width: 3px;
+    height: 100px;
+    background: #000;
+    margin-top: 50px;
+}
+
+.scrolling__inner {
+	max-width: 45em;
+	padding: 3em;
+	background-color: #fff;
+	box-shadow: 0 12px 20px -6px rgba( 0,0,0,.3);
+}
+.scrolling__inner span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.sticky-section {
+	z-index: 1;
+	position: relative;
+}
+
+.sticky-image {
+	position: sticky;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	background-size: cover;
+	display: block;
+	background-position: center;
+}
+
+[data-attachment="fixed"] {
+	background-attachment: fixed;
+}
+
+.scrolling {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	padding: 0 0 100vh;
+	
+	
+} 
+
+
+
+
+/* sub_shop */
+
+.coffee > h2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.merchandise > h2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* 커피종류 영역 */
+
+.coffee,
+.merchandise {
+    margin-top: 200px;
+    position: relative;
+}
+
+.cof_box {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cof_box img {
+    width: 250px;
+    height: 250px;
+    background: rgba(40, 40, 40, 0.2);
+}
+
+.cof_box div {
+    padding-bottom: 40px;
+}
+.con{
+    position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 86%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(40,40,40,0.8);
+}
+.text {
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.con:hover .overlay {
+  opacity: 1;
+    cursor: pointer;
+}
+
+
+/* 다른메뉴 영역 */
+
+.merchandise {
+    width: 100%;
+    height: auto;
+}
+
+.mer_box {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mer_box img {
+    width: 250px;
+    height: 250px;
+}
+
+.mer_box div {
+    padding-bottom: 40px;
+}
+
+
+/* sub cafe */
+
+.sub_tit{
+    margin: 200px 0 100px 0;
+    text-align: center;
+}
+.cf_row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 120px;
+}
+.cf_box{width: 43%;}
+.cf_pic img{width: 100%;}
+.cf_txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cf_txt_wrap h5{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.cf_txt_wrap p{
+    color: #888;
+}
+.cf_txt a{
+    padding: 12px 25px;
+    border: 2px solid #00a6da;
+    box-sizing: border-box;
+    color: #00a6da;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s;
+}
+.cf_txt a:hover{
+    background-color: #00a6da;
+    color: #fff;
+}
+
+
+
+/* sub contact */
+
+.ct_mail ul{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+.ct_mail li{
+    width: 25%;
+    position: relative;
+}
+.ct_mail ul li::after{
+    content: "";
+    width: 1px;
+    height: 60%;
+    background-color: #ddd;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    margin: auto;
+}
+.ct_mail ul li:first-child::after{
+    display: none;
+}
+.ct_mail h5{
+    font-size: 18px;
+}
+.ct_mail li a{
+    padding: 12px 20px;
+    border: 2px solid #00a6da;
+    color: #00a6da;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s;
+    margin: 30px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.ct_mail a:hover{
+    background-color: #00a6da;
+    color: #fff;
+}
+.ct_map{width: 100%;}
+.map_txt ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #f6f6f6;
+    margin-top: 50px;
+}
+.map_txt li{
+    display: flex;
+    align-items: center;
+}
+.map_txt .material-symbols-outlined{
+    font-size: 28px;
+    margin: 0 15px;
+    opacity: .2;
+}
+
+
+
+
+
+/* footer 영역 #38b9e8 */ 
+
+footer{
+    width: 100%;
+    height: 300px;
+    background: #38b9e8;
+}
+.footerwrap{
+    width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ft_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    height: 100px;
+    align-items: center;
+}
+.ft_menu a{color: #fff;}
+.ft_menu a:hover{font-weight: bold;}
+
+
+.ft_company h4{color: #fff; margin-top: 10px;}
+.ft_company p{color: #fff;}
+.sns{
+    width: 7%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-around;
+    
+}
+.sns i{
+    font-size: 35px;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    header{
+        height: auto;
+        z-index: 999
+    }
+       .headerwrap {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .img_responsive{ max-width: 100%; height: auto; display: block;}
+
+    .logo {
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.3);
+        display: none;
+        width: 100%;
+    }
+
+    .submenu {
+        width: 100%;
+        background: #fff;
+        z-index: 111;
+        position: absolute;
+    }
+
+    .toggleBtn {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+    
+    main{
+        width: 100%;
+    }
+    
+    .one {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .one_txt{
+        width: 100%;
+    }
+    .one img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .mer_box {
+        width: 100%;
+    }
+
+    .mer_box img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .parallax01 h1, .parallax02 h1 {
+        position: absolute;
+        color: #fff;
+        top: 230px;
+        left: 15px;
+        font-size: 30px;
+        }
+    
+        .cof_box {
+            width: 100%;
+        }
+    
+        .cof_box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    .footerwrap{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .ft_menu{width: 100%;flex-direction: column;padding: 5px;}
+
+    footer{width: 100%; height: auto;}
+}
